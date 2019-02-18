@@ -1,0 +1,33 @@
+h1, h2, h3{
+  font-family: arial;
+  font-size: 64;
+  color: darkblue;
+  text-align: center;
+}
+
+body{
+  background-color: grey;
+  text-align: left;
+  font-family: serif;
+}
+
+p{
+  font-family: monospace;
+  font-size: 18;
+}
+
+a:link{
+  color: lightblue;
+}
+
+a:visited{
+  color: blue;
+}
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  color: pink;
+}
