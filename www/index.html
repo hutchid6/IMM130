@@ -3,35 +3,49 @@
 <head>
 	<meta charset ="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/personalStyle.css">
-	<style>
-	body{
-		background-color: white;
-	}
-	</style>
-	<title> Dalton's Site </title>
-	<h1> Dalton Hutchinson</h1>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway&display=swap" rel="stylesheet">
+	<title> Dalton's Home </title>
 </head>
 
+<header>
+		<ul class="navBar">
+		<li class="navBar"><a href=index.html class="navBar">Home</a></li>
+		<li class="navBar"><a href=positioningLab/positioning.html class="navBar">Resume</a></li>
+		<li class="navBar"><a href=assignmentsPage.html class="navBar">Assignments</a></li>
+		<li class="navBar"><a href=personalPages/volleyball.html class="navBar">Volleyball</a></li>
+		<li class="navBar"><a href=imagesPage.html class="navBar">Images</a></li>
+		<li class="navBar"><a href=contactPage.html class="navBar">Contact Me</a></li>
+	</ul>
+</header>
+
 <body>
-	<ul>
-		<li> <a> HTML</a> </li>
-		<li> <a> CSS </a> </li>
-		<li> <a> Photoshop</a> </li>
-		<li> <a> Wireframing</a> </li>
-		<li> <a> Responsive Website</a> </li>
-		<li> <a> Animation </a> </li>
-		<li> <a> Boostrap </a> </li>
-		<li> <a> SVG </a> </li>
-
+		<h1>Home </h1>
+		<img id="homeDrawing" src="homePicture1.JPG" alt="Drawing of a man waving">
 		<br>
+		<button id="wave"> Click to Wave </button>
 
-		<h3> Personal Pages</h3>
-		<a href=personalPages/volleyball.html> Volleyball Site </a>
-		<br>
-		<a href=personalPages/locations.html> Future Destinations </a>
+		<p id="welcome">Hello! My name is Dalton Hutchinson and welcome to my website. It's a work in progress
+			and it showcases my work in web design. It also includes some of my hobbies and personal
+			interests. If you need to get in touch, head over to the Contact Me page and I'll shoot you
+			an email. Thank you! </p>
 
-		<h3> Constitution Assignments </h3>
-		<a href=constitution/constitution.html> Constitution Article One </a>
+		<script>
+		var showPicture1 = false;
+		document.getElementById("wave").onclick = function(){changePicture()};
+		function changePicture()
+		{
+			if(showPicture1 == false)
+			{
+				document.getElementById("homeDrawing").src = "homePicture2.JPG";
+				showPicture1 = true;
+			}
+			else if(showPicture1)
+			{
+				document.getElementById("homeDrawing").src = "homePicture1.JPG";
+				showPicture1 = false;
+			}
+		}
+		</script>
 </body>
 
 </html>
